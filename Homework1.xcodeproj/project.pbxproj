@@ -13,6 +13,7 @@
 		D515D01319CFFDB600BF7F1A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D515D01219CFFDB600BF7F1A /* Images.xcassets */; };
 		D515D01619CFFDB600BF7F1A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D515D01419CFFDB600BF7F1A /* LaunchScreen.xib */; };
 		D515D02219CFFDB600BF7F1A /* Homework1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515D02119CFFDB600BF7F1A /* Homework1Tests.swift */; };
+		D5E62DF61A242CB200176D9F /* RockPaperSisorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E62DF51A242CB200176D9F /* RockPaperSisorsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		D515D01B19CFFDB600BF7F1A /* Homework1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Homework1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D515D02019CFFDB600BF7F1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D515D02119CFFDB600BF7F1A /* Homework1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homework1Tests.swift; sourceTree = "<group>"; };
+		D5E62DF51A242CB200176D9F /* RockPaperSisorsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RockPaperSisorsView.swift; path = ../RockPaperSisorsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		D515D00819CFFDB600BF7F1A /* Homework1 */ = {
 			isa = PBXGroup;
 			children = (
+				D5E62DF51A242CB200176D9F /* RockPaperSisorsView.swift */,
 				D515D00B19CFFDB600BF7F1A /* AppDelegate.swift */,
 				D515D00D19CFFDB600BF7F1A /* ViewController.swift */,
 				D515D00F19CFFDB600BF7F1A /* Main.storyboard */,
@@ -214,6 +217,7 @@
 			files = (
 				D515D00E19CFFDB600BF7F1A /* ViewController.swift in Sources */,
 				D515D00C19CFFDB600BF7F1A /* AppDelegate.swift in Sources */,
+				D5E62DF61A242CB200176D9F /* RockPaperSisorsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +345,7 @@
 				INFOPLIST_FILE = Homework1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -351,6 +356,7 @@
 				INFOPLIST_FILE = Homework1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -407,6 +413,7 @@
 				D515D02719CFFDB600BF7F1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D515D02819CFFDB600BF7F1A /* Build configuration list for PBXNativeTarget "Homework1Tests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +422,7 @@
 				D515D02A19CFFDB600BF7F1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
