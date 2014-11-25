@@ -15,9 +15,16 @@ class ViewController: UIViewController {
     @IBOutlet var CreateButton: UIButton!
     @IBOutlet var UsernameField: UITextField!
     @IBOutlet var AgeSlider: UISlider!
+    @IBOutlet var SexSelector: UISegmentedControl!
+    
+    
+    var username: NSString!
+    var age: Int!
+    var sex: NSString!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setSexByIndex(SexSelector.selectedSegmentIndex) // init to the default selected
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -26,20 +33,30 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
-    @IBAction func usernameTrigger(sender: UITextField) {
-        //AgeLabel.text = "Username"
-    }
-    @IBAction func onUsernameChange(sender: AnyObject) {
-        AgeLabel.text = UsernameField.text
+    @IBAction func onUsernameChange(sender: UITextField) {
+        // AgeLabel.text = UsernameField.text
+        username = sender.text
     }
 
     @IBAction func OnCreate(sender: AnyObject) {
+
         
     }
     @IBAction func ageOnChange(sender: UISlider) {
-        var currentValue = Int(sender.value)
-        AgeLabel.text = "\(currentValue)"
+        var currentAge = Int(sender.value)
+        AgeLabel.text = "\(currentAge)"
+        age = currentAge
+    }
+    @IBAction func onSexChange(sender: UISegmentedControl) {
+        setSexByIndex(sender.selectedSegmentIndex)
+    }
+    
+    func setSexByIndex(index: Int){
+        if(index == 0){
+            sex = "Male";
+        }else{
+            sex = "Female";
+        }
     }
 }
 

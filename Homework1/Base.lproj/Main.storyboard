@@ -39,9 +39,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="UsernameTrigger:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="9bw-by-xT2"/>
                                     <action selector="onUsernameChange:" destination="BYZ-38-t0r" eventType="editingChanged" id="lpC-ZY-eR1"/>
-                                    <action selector="usernameTrigger:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="LfN-ou-F3Z"/>
                                 </connections>
                             </textField>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="m35-1k-ASC">
@@ -50,6 +48,9 @@
                                     <segment title="Male"/>
                                     <segment title="Female"/>
                                 </segments>
+                                <connections>
+                                    <action selector="onSexChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="pVJ-Lx-FWJ"/>
+                                </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tff-9Y-n4U">
                                 <rect key="frame" x="31" y="420" width="92" height="38"/>
@@ -72,6 +73,7 @@
                         <outlet property="AgeLabel" destination="fYI-yX-yTt" id="zkp-mF-SaH"/>
                         <outlet property="AgeSlider" destination="OZr-Kg-bd4" id="Uvh-sy-gIF"/>
                         <outlet property="CreateButton" destination="Tff-9Y-n4U" id="9ON-YL-G0U"/>
+                        <outlet property="SexSelector" destination="m35-1k-ASC" id="f4U-Dm-Jgh"/>
                         <outlet property="UsernameField" destination="2t1-yh-B8v" id="NhG-ha-gbD"/>
                     </connections>
                 </viewController>
