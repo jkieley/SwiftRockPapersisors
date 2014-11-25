@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet var AgeLabel: UILabel!
     @IBOutlet var CreateButton: UIButton!
     @IBOutlet var UsernameField: UITextField!
-
+    @IBOutlet var AgeSlider: UISlider!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +36,10 @@ class ViewController: UIViewController {
 
     @IBAction func OnCreate(sender: AnyObject) {
         
+    }
+    @IBAction func ageOnChange(sender: UISlider) {
+        var currentValue = Int(sender.value)
+        AgeLabel.text = "\(currentValue)"
     }
 }
 
