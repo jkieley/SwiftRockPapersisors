@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import AVFoundation
 
-class ViewController: UIViewController {
+
+class ViewController: UIViewController, UIGestureRecognizerDelegate {
 
 
     @IBOutlet var AgeLabel: UILabel!
@@ -16,15 +18,22 @@ class ViewController: UIViewController {
     @IBOutlet var UsernameField: UITextField!
     @IBOutlet var AgeSlider: UISlider!
     @IBOutlet var SexSelector: UISegmentedControl!
+    var tapGestureRecognizer: UITapGestureRecognizer!
     
     
-    var username: NSString!
-    var age: Int!
+    var username: NSString = ""
+    var age: Int = 0
     var sex: NSString!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setSexByIndex(SexSelector.selectedSegmentIndex) // init to the default selected
+        UsernameField.text = username
+        AgeSlider.setValue(Float(age),animated: true)
+        
+        let recognizer = UITapGestureRecognizer(target: self, action:Selector("handleTap:"))
+        recognizer.delegate = self
+        view.addGestureRecognizer(recognizer)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -39,7 +48,9 @@ class ViewController: UIViewController {
     }
 
     @IBAction func OnCreate(sender: AnyObject) {
-
+        println("username: "+username)
+        println("sex: "+sex)
+        println("age: "+"\(age)")
         
     }
     @IBAction func ageOnChange(sender: UISlider) {
@@ -57,6 +68,10 @@ class ViewController: UIViewController {
         }else{
             sex = "Female";
         }
+    }
+    
+    func handleTap(recognizer: UITapGestureRecognizer) {
+        self.view.endEditing(true)
     }
 }
 
