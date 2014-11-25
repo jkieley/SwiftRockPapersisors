@@ -14,7 +14,7 @@
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>2A6845AE21842C59ABFA9ACDAC791AE8BE6AAC94</key>
-		<string>SwiftRockPapersisors/</string>
+		<string>SwiftRockPapersisors</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/jkieley/SwiftRockPapersisors.git</string>
