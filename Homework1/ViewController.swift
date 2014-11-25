@@ -34,5 +34,8 @@ class ViewController: UIViewController {
         AgeLabel.text = UsernameField.text
     }
 
+    @IBAction func OnCreate(sender: AnyObject) {
+        
+    }
 }
 
