@@ -41,14 +41,10 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
     }
 
     @IBAction func onUsernameChange(sender: UITextField) {
-        // AgeLabel.text = UsernameField.text
         user.username = sender.text
     }
 
     @IBAction func OnCreate(sender: AnyObject) {
-        println("username: "+user.username)
-        println("sex: "+user.sex)
-        println("age: "+"\(user.age)")
         databaseService.createUser(user)
     }
     

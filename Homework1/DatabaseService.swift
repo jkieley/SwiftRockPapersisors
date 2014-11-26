@@ -28,8 +28,9 @@ public class DatabaseService{
         
         var error: NSError?
         if let rowId = db.insertInto("users", values:["username":user.username,"sex":user.sex,"age":user.age], error:&error) {
-            // rowId is the id in the database
+            // success
         } else {
+            // failure
             println(error);
         }
     }
