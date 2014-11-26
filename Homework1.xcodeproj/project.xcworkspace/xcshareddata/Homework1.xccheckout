@@ -6,6 +6,8 @@
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>B38AF8E6-5F38-4B0C-88D1-67E251F081B6</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Homework1</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>2A6845AE21842C59ABFA9ACDAC791AE8BE6AAC94</key>
@@ -13,16 +15,14 @@
 		<key>910A3B3A1D352F7A0B5C487506E17B8D6367FF66</key>
 		<string>github.com:nerdyc/Squeal.git</string>
 	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Homework1.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>2A6845AE21842C59ABFA9ACDAC791AE8BE6AAC94</key>
-<<<<<<< Updated upstream
 		<string>../..</string>
 		<key>910A3B3A1D352F7A0B5C487506E17B8D6367FF66</key>
 		<string>../../Externals/Squeal</string>
-=======
-		<string>SwiftRockPapersisors/</string>
->>>>>>> Stashed changes
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/jkieley/SwiftRockPapersisors.git</string>
@@ -38,7 +38,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>2A6845AE21842C59ABFA9ACDAC791AE8BE6AAC94</string>
 			<key>IDESourceControlWCCName</key>
-			<string>SwiftRockPapersisors</string>
+			<string>Homework1</string>
 		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
