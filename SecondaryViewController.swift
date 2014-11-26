@@ -16,6 +16,10 @@ class SecondaryViewController: UIViewController {
     
     var userChoice:Int = 0
     var opponentChoice:Int = 0
+    let ROCK:Int = 1
+    let PAPER:Int = 2
+    let SCISSORS:Int = 3
+    
     
     //TODO: Generate Computer Choice function
     //TODO: Game Logic Function
@@ -28,20 +32,20 @@ class SecondaryViewController: UIViewController {
 
     @IBAction func OnClick_RockButton(sender: AnyObject) {
         self.Label_UserChoice.text = "You have chosen ROCK"
-        userChoice = 1
+        userChoice = ROCK
         println("Userchoice: Rock")
     }
     
     @IBAction func OnClick_PaperButton(sender: AnyObject) {
         self.Label_UserChoice.text = "You have chosen PAPER"
-        userChoice = 2
+        userChoice = PAPER
         println("Userchoice: Paper")
     }
 
     
     @IBAction func OnClick_ScissorsButton(sender: AnyObject) {
         self.Label_UserChoice.text = "You have chosen SCISSORS"
-        userChoice = 3
+        userChoice = SCISSORS
         println("Userchoice: Scissors")
     }
     
@@ -68,5 +72,65 @@ class SecondaryViewController: UIViewController {
         }
         
     }
+    
+    func GameLogic_ComputeResults(){
+        if userChoice == ROCK {
+            switch(opponentChoice){
+            case ROCK:
+                //Tie
+                println("Tie Game")
+                break;
+            case PAPER:
+                //Loss
+                println("User Loses")
+                break;
+            case SCISSORS:
+                //Win
+                println("User Wins")
+                break;
+            default:
+                break;
+            }
+            
+        }
 
+        else if userChoice == PAPER {
+            switch(opponentChoice){
+            case ROCK:
+                //Win
+                println("User Wins")
+                break;
+            case PAPER:
+                //Tie
+                println("Tie Game")
+                break;
+            case SCISSORS:
+                //Loss
+                println("User Loses")
+                break;
+            default:
+                break;
+            }
+            
+        }
+        
+        else if userChoice == SCISSORS {
+            switch(opponentChoice){
+            case ROCK:
+                //Loss
+                println("User Loses")
+                break;
+            case PAPER:
+                //Win
+                println("User Wins")
+                break;
+            case SCISSORS:
+                //Tie
+                println("Tie Game")
+                break;
+            default:
+                break;
+            }
+        }
+    }
 }
