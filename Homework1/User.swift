@@ -8,7 +8,7 @@
 
 import Foundation
 
-class User: NSObject {
+public class User: NSObject {
     var username: String = String("")
     var age: Int = 0
     var sex: String!

@@ -19,6 +19,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
     @IBOutlet var SexSelector: UISegmentedControl!
     var tapGestureRecognizer: UITapGestureRecognizer!
     var user : User = User()
+    let databaseService = DatabaseService()
     
 
     
@@ -48,7 +49,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
         println("username: "+user.username)
         println("sex: "+user.sex)
         println("age: "+"\(user.age)")
-        
+        databaseService.createUser(user)
     }
     
     @IBAction func ageOnChange(sender: UISlider) {

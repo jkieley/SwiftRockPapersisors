@@ -130,13 +130,13 @@
 			children = (
 				D57F69361A253B1E0095EA43 /* User.swift */,
 				D57F69381A253BE20095EA43 /* DatabaseService.swift */,
-				D57F693A1A26169D0095EA43 /* Squeal.xcodeproj */,
 				D5E62DF51A242CB200176D9F /* SecondaryViewController.swift */,
 				D515D00B19CFFDB600BF7F1A /* AppDelegate.swift */,
 				D515D00D19CFFDB600BF7F1A /* ViewController.swift */,
 				D515D00F19CFFDB600BF7F1A /* Main.storyboard */,
 				D515D01219CFFDB600BF7F1A /* Images.xcassets */,
 				D515D01419CFFDB600BF7F1A /* LaunchScreen.xib */,
+				D57F693A1A26169D0095EA43 /* Squeal.xcodeproj */,
 				D515D00919CFFDB600BF7F1A /* Supporting Files */,
 			);
 			path = Homework1;

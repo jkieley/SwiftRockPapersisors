@@ -7,8 +7,39 @@
 //
 
 import Foundation
+import Squeal
 
-class DatabaseService{
+public class DatabaseService{
+
+    
+    public func createUserTable(){
+        let db = getDb()
+        db.createTable("users",
+            definitions:[
+                "user_id INTEGER PRIMARY KEY",
+                "username TEXT",
+                "sex TEXT",
+                "age INTEGER",
+            ])
+    }
+    
+    public func createUser(user: User){
+        let db = getDb();
+        
+        var error: NSError?
+        if let rowId = db.insertInto("users", values:["username":user.username,"sex":user.sex,"age":user.age], error:&error) {
+            // rowId is the id in the database
+        } else {
+            println(error);
+        }
+    }
+    
+    private func getDb() -> Database {
+        let dirs : [String]? = NSSearchPathForDirectoriesInDomains(.LibraryDirectory, .UserDomainMask, true) as? [String]
+        var documentsDirectory = dirs![0]
+        let db = Database(path:documentsDirectory.stringByAppendingPathComponent("/data.db"))!
+        return db
+    }
     
 
 }
