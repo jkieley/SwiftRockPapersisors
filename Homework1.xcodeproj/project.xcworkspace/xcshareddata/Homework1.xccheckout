@@ -12,6 +12,8 @@
 	<dict>
 		<key>2A6845AE21842C59ABFA9ACDAC791AE8BE6AAC94</key>
 		<string>https://github.com/jkieley/SwiftRockPapersisors.git</string>
+		<key>910A3B3A1D352F7A0B5C487506E17B8D6367FF66</key>
+		<string>github.com:nerdyc/Squeal.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Homework1.xcodeproj</string>
@@ -19,6 +21,8 @@
 	<dict>
 		<key>2A6845AE21842C59ABFA9ACDAC791AE8BE6AAC94</key>
 		<string>../..</string>
+		<key>910A3B3A1D352F7A0B5C487506E17B8D6367FF66</key>
+		<string>../../Externals/Squeal/</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/jkieley/SwiftRockPapersisors.git</string>
@@ -35,6 +39,14 @@
 			<string>2A6845AE21842C59ABFA9ACDAC791AE8BE6AAC94</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Homework1</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>910A3B3A1D352F7A0B5C487506E17B8D6367FF66</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Squeal</string>
 		</dict>
 	</array>
 </dict>

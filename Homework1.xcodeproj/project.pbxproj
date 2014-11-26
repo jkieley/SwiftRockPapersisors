@@ -13,6 +13,9 @@
 		D515D01319CFFDB600BF7F1A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D515D01219CFFDB600BF7F1A /* Images.xcassets */; };
 		D515D01619CFFDB600BF7F1A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D515D01419CFFDB600BF7F1A /* LaunchScreen.xib */; };
 		D515D02219CFFDB600BF7F1A /* Homework1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515D02119CFFDB600BF7F1A /* Homework1Tests.swift */; };
+		D57F69371A253B1E0095EA43 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F69361A253B1E0095EA43 /* User.swift */; };
+		D57F69391A253BE20095EA43 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F69381A253BE20095EA43 /* DatabaseService.swift */; };
+		D57F69511A2616E00095EA43 /* Squeal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D57F69461A26169E0095EA43 /* Squeal.framework */; };
 		D5E62DF61A242CB200176D9F /* SecondaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E62DF51A242CB200176D9F /* SecondaryViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +26,48 @@
 			proxyType = 1;
 			remoteGlobalIDString = D515D00519CFFDB600BF7F1A;
 			remoteInfo = Homework1;
+		};
+		D57F69451A26169E0095EA43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D57F693A1A26169D0095EA43 /* Squeal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CD7247F71996880300151E1E;
+			remoteInfo = "Squeal-OSX";
+		};
+		D57F69471A26169E0095EA43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D57F693A1A26169D0095EA43 /* Squeal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CD7248021996880300151E1E;
+			remoteInfo = "Squeal-OSXTests";
+		};
+		D57F69491A26169E0095EA43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D57F693A1A26169D0095EA43 /* Squeal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CDCBEB4C19C5F6F500862BFD;
+			remoteInfo = "Squeal-iOS";
+		};
+		D57F694B1A26169E0095EA43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D57F693A1A26169D0095EA43 /* Squeal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CDCBEB5619C5F6F500862BFD;
+			remoteInfo = "Squeal-iOSTests";
+		};
+		D57F694D1A26169E0095EA43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D57F693A1A26169D0095EA43 /* Squeal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CD3DE27919BCD44B00DED437;
+			remoteInfo = "SquealSpecHelpers-OSX";
+		};
+		D57F694F1A26169E0095EA43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D57F693A1A26169D0095EA43 /* Squeal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CDCBEB7019C5F77900862BFD;
+			remoteInfo = "SquealSpecHelpers-iOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -37,6 +82,9 @@
 		D515D01B19CFFDB600BF7F1A /* Homework1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Homework1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D515D02019CFFDB600BF7F1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D515D02119CFFDB600BF7F1A /* Homework1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homework1Tests.swift; sourceTree = "<group>"; };
+		D57F69361A253B1E0095EA43 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D57F69381A253BE20095EA43 /* DatabaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		D57F693A1A26169D0095EA43 /* Squeal.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Squeal.xcodeproj; path = Externals/Squeal/Squeal.xcodeproj; sourceTree = SOURCE_ROOT; };
 		D5E62DF51A242CB200176D9F /* SecondaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondaryViewController.swift; path = ../SecondaryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -45,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D57F69511A2616E00095EA43 /* Squeal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +128,9 @@
 		D515D00819CFFDB600BF7F1A /* Homework1 */ = {
 			isa = PBXGroup;
 			children = (
+				D57F69361A253B1E0095EA43 /* User.swift */,
+				D57F69381A253BE20095EA43 /* DatabaseService.swift */,
+				D57F693A1A26169D0095EA43 /* Squeal.xcodeproj */,
 				D5E62DF51A242CB200176D9F /* SecondaryViewController.swift */,
 				D515D00B19CFFDB600BF7F1A /* AppDelegate.swift */,
 				D515D00D19CFFDB600BF7F1A /* ViewController.swift */,
@@ -113,6 +165,19 @@
 				D515D02019CFFDB600BF7F1A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D57F693B1A26169D0095EA43 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D57F69461A26169E0095EA43 /* Squeal.framework */,
+				D57F69481A26169E0095EA43 /* Squeal-OSXTests.xctest */,
+				D57F694A1A26169E0095EA43 /* Squeal.framework */,
+				D57F694C1A26169E0095EA43 /* Squeal-iOSTests.xctest */,
+				D57F694E1A26169E0095EA43 /* SquealSpecHelpers.framework */,
+				D57F69501A26169E0095EA43 /* SquealSpecHelpers.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +248,12 @@
 			mainGroup = D515CFFD19CFFDB600BF7F1A;
 			productRefGroup = D515D00719CFFDB600BF7F1A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D57F693B1A26169D0095EA43 /* Products */;
+					ProjectRef = D57F693A1A26169D0095EA43 /* Squeal.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				D515D00519CFFDB600BF7F1A /* Homework1 */,
@@ -190,6 +261,51 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D57F69461A26169E0095EA43 /* Squeal.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Squeal.framework;
+			remoteRef = D57F69451A26169E0095EA43 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D57F69481A26169E0095EA43 /* Squeal-OSXTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Squeal-OSXTests.xctest";
+			remoteRef = D57F69471A26169E0095EA43 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D57F694A1A26169E0095EA43 /* Squeal.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Squeal.framework;
+			remoteRef = D57F69491A26169E0095EA43 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D57F694C1A26169E0095EA43 /* Squeal-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Squeal-iOSTests.xctest";
+			remoteRef = D57F694B1A26169E0095EA43 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D57F694E1A26169E0095EA43 /* SquealSpecHelpers.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SquealSpecHelpers.framework;
+			remoteRef = D57F694D1A26169E0095EA43 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D57F69501A26169E0095EA43 /* SquealSpecHelpers.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SquealSpecHelpers.framework;
+			remoteRef = D57F694F1A26169E0095EA43 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D515D00419CFFDB600BF7F1A /* Resources */ = {
@@ -216,6 +332,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D57F69371A253B1E0095EA43 /* User.swift in Sources */,
+				D57F69391A253BE20095EA43 /* DatabaseService.swift in Sources */,
 				D515D00E19CFFDB600BF7F1A /* ViewController.swift in Sources */,
 				D515D00C19CFFDB600BF7F1A /* AppDelegate.swift in Sources */,
 				D5E62DF61A242CB200176D9F /* SecondaryViewController.swift in Sources */,
@@ -346,6 +464,7 @@
 				INFOPLIST_FILE = Homework1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/Externals/Squeal/modules";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -357,6 +476,7 @@
 				INFOPLIST_FILE = Homework1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(PROJECT_DIR)/Externals/Squeal/modules";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

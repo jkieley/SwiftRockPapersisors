@@ -9,7 +9,6 @@
 import UIKit
 import AVFoundation
 
-
 class ViewController: UIViewController, UIGestureRecognizerDelegate {
 
 
@@ -19,17 +18,15 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
     @IBOutlet var AgeSlider: UISlider!
     @IBOutlet var SexSelector: UISegmentedControl!
     var tapGestureRecognizer: UITapGestureRecognizer!
+    var user : User = User()
     
-    
-    var username: NSString = ""
-    var age: Int = 0
-    var sex: NSString!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setSexByIndex(SexSelector.selectedSegmentIndex) // init to the default selected
-        UsernameField.text = username
-        AgeSlider.setValue(Float(age),animated: true)
+        UsernameField.text = user.username
+        AgeSlider.setValue(Float(user.age),animated: true)
         
         let recognizer = UITapGestureRecognizer(target: self, action:Selector("handleTap:"))
         recognizer.delegate = self
@@ -44,19 +41,20 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
 
     @IBAction func onUsernameChange(sender: UITextField) {
         // AgeLabel.text = UsernameField.text
-        username = sender.text
+        user.username = sender.text
     }
 
     @IBAction func OnCreate(sender: AnyObject) {
-        println("username: "+username)
-        println("sex: "+sex)
-        println("age: "+"\(age)")
+        println("username: "+user.username)
+        println("sex: "+user.sex)
+        println("age: "+"\(user.age)")
         
     }
+    
     @IBAction func ageOnChange(sender: UISlider) {
         var currentAge = Int(sender.value)
         AgeLabel.text = "\(currentAge)"
-        age = currentAge
+        user.age = currentAge
     }
     @IBAction func onSexChange(sender: UISegmentedControl) {
         setSexByIndex(sender.selectedSegmentIndex)
@@ -64,9 +62,9 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
     
     func setSexByIndex(index: Int){
         if(index == 0){
-            sex = "Male";
+            user.sex = "Male";
         }else{
-            sex = "Female";
+            user.sex = "Female";
         }
     }
     
