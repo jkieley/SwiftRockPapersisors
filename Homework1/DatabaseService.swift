@@ -65,10 +65,7 @@ public class DatabaseService{
             whereExpr: "username = ?",
             parameters:[user.username],
             error:&error) {
-                println("update count"+"\(updateCount)");
         } else {
-            println(error)
-            println("error on update")
             // handle error
         }
     }
