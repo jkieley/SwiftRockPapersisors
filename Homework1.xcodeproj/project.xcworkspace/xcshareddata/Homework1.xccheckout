@@ -22,7 +22,7 @@
 		<key>2A6845AE21842C59ABFA9ACDAC791AE8BE6AAC94</key>
 		<string>../..</string>
 		<key>910A3B3A1D352F7A0B5C487506E17B8D6367FF66</key>
-		<string>../../Externals/Squeal/</string>
+		<string>../../Externals/Squeal</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/jkieley/SwiftRockPapersisors.git</string>

@@ -12,4 +12,7 @@ public class User: NSObject {
     var username: String = String("")
     var age: Int = 0
     var sex: String!
+    var wins: Int = 0
+    var looses: Int = 0
+    var ties: Int = 0
 }

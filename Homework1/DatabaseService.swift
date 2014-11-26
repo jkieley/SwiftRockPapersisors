@@ -20,6 +20,9 @@ public class DatabaseService{
                 "username TEXT",
                 "sex TEXT",
                 "age INTEGER",
+                "wins INTEGER",
+                "looses INTEGER",
+                "ties INTEGER"
             ])
     }
     
@@ -27,7 +30,16 @@ public class DatabaseService{
         let db = getDb();
         
         var error: NSError?
-        if let rowId = db.insertInto("users", values:["username":user.username,"sex":user.sex,"age":user.age], error:&error) {
+        if let rowId = db.insertInto("users", values:[
+            
+                "username":user.username,
+                "sex":user.sex,
+                "age":user.age,
+                "wins":user.wins,
+                "looses":user.looses,
+                "ties":user.ties
+            
+            ], error:&error) {
             // success
         } else {
             // failure
