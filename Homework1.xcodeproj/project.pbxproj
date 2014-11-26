@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D39643171A26948800FC8F3D /* Squeal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D57F69461A26169E0095EA43 /* Squeal.framework */; };
+		D39643181A26948800FC8F3D /* Squeal.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D57F69461A26169E0095EA43 /* Squeal.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D515D00C19CFFDB600BF7F1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515D00B19CFFDB600BF7F1A /* AppDelegate.swift */; };
 		D515D00E19CFFDB600BF7F1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515D00D19CFFDB600BF7F1A /* ViewController.swift */; };
 		D515D01119CFFDB600BF7F1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D515D00F19CFFDB600BF7F1A /* Main.storyboard */; };
@@ -20,6 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D39643191A26948800FC8F3D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D57F693A1A26169D0095EA43 /* Squeal.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = CD7247F61996880300151E1E;
+			remoteInfo = "Squeal-OSX";
+		};
 		D515D01C19CFFDB600BF7F1A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D515CFFE19CFFDB600BF7F1A /* Project object */;
@@ -71,6 +80,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D396431B1A26948800FC8F3D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D39643181A26948800FC8F3D /* Squeal.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		D515D00619CFFDB600BF7F1A /* Homework1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homework1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D515D00A19CFFDB600BF7F1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -94,6 +117,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D57F69511A2616E00095EA43 /* Squeal.framework in Frameworks */,
+				D39643171A26948800FC8F3D /* Squeal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,10 +214,12 @@
 				D515D00219CFFDB600BF7F1A /* Sources */,
 				D515D00319CFFDB600BF7F1A /* Frameworks */,
 				D515D00419CFFDB600BF7F1A /* Resources */,
+				D396431B1A26948800FC8F3D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D396431A1A26948800FC8F3D /* PBXTargetDependency */,
 			);
 			name = Homework1;
 			productName = Homework1;
@@ -229,10 +255,11 @@
 				TargetAttributes = {
 					D515D00519CFFDB600BF7F1A = {
 						CreatedOnToolsVersion = 6.0.1;
-						DevelopmentTeam = 6EMA97NE3S;
+						DevelopmentTeam = 8G2T5J2353;
 					};
 					D515D01A19CFFDB600BF7F1A = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = 8G2T5J2353;
 						TestTargetID = D515D00519CFFDB600BF7F1A;
 					};
 				};
@@ -351,6 +378,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D396431A1A26948800FC8F3D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Squeal-OSX";
+			targetProxy = D39643191A26948800FC8F3D /* PBXContainerItemProxy */;
+		};
 		D515D01D19CFFDB600BF7F1A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D515D00519CFFDB600BF7F1A /* Homework1 */;
@@ -462,6 +494,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Homework1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -475,6 +508,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Homework1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
