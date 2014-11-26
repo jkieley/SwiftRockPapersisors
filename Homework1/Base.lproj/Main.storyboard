@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="YhF-yp-kRn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="YhF-yp-kRn">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
@@ -61,7 +61,6 @@
                                 </state>
                                 <connections>
                                     <action selector="OnCreate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dij-ab-ej9"/>
-                                    <segue destination="akD-0e-hPX" kind="show" id="V8t-FM-iie"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -104,29 +103,52 @@
                                 <state key="normal" title="Rock">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="OnClick_RockButton:" destination="akD-0e-hPX" eventType="touchUpInside" id="bPz-ol-4B5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Llg-Lb-8g9">
                                 <rect key="frame" x="133" y="179" width="41" height="30"/>
                                 <state key="normal" title="Paper">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="OnClick_PaperButton:" destination="akD-0e-hPX" eventType="touchUpInside" id="NEl-1X-S4B"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7DK-fs-ktD">
                                 <rect key="frame" x="207" y="179" width="59" height="30"/>
                                 <state key="normal" title="Scissors">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="OnClick_ScissorsButton:" destination="akD-0e-hPX" eventType="touchUpInside" id="j8h-DD-0gB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AOv-VB-q6H">
                                 <rect key="frame" x="137" y="256" width="30" height="30"/>
                                 <state key="normal" title="Play">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="OnClick_PlayButton:" destination="akD-0e-hPX" eventType="touchUpInside" id="xq2-UG-SXO"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOO-iw-II7">
+                                <rect key="frame" x="52" y="138" width="216" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="Button_Play" destination="AOv-VB-q6H" id="bsa-8P-dpy"/>
+                        <outlet property="Label_UserChoice" destination="pOO-iw-II7" id="Cfm-uY-p9q"/>
+                        <outlet property="OnClick_ScissorsButton" destination="7DK-fs-ktD" id="Frd-02-rWa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Icm-n7-dac" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
