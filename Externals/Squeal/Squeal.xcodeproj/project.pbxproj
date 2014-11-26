@@ -663,7 +663,7 @@
 					};
 					CDCBEB4B19C5F6F500862BFD = {
 						CreatedOnToolsVersion = 6.1;
-						DevelopmentTeam = 8G2T5J2353;
+						DevelopmentTeam = D7K65AYKY9;
 					};
 					CDCBEB5519C5F6F500862BFD = {
 						CreatedOnToolsVersion = 6.1;

@@ -14,6 +14,10 @@
 		<string>https://github.com/jkieley/SwiftRockPapersisors.git</string>
 		<key>910A3B3A1D352F7A0B5C487506E17B8D6367FF66</key>
 		<string>github.com:nerdyc/Squeal.git</string>
+		<key>95438028B10BBB846574013D29F154A00556A9D1</key>
+		<string>github.com:nerdyc/Nimble.git</string>
+		<key>D0725CAC6FF2D66F2C83C2C48DC12106D42DAA64</key>
+		<string>github.com:nerdyc/Quick.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Homework1.xcodeproj</string>
@@ -23,6 +27,10 @@
 		<string>../..</string>
 		<key>910A3B3A1D352F7A0B5C487506E17B8D6367FF66</key>
 		<string>../../Externals/Squeal</string>
+		<key>95438028B10BBB846574013D29F154A00556A9D1</key>
+		<string>../../Externals/Squeal/Externals/Nimble/</string>
+		<key>D0725CAC6FF2D66F2C83C2C48DC12106D42DAA64</key>
+		<string>../../Externals/Squeal/Externals/Quick/</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/jkieley/SwiftRockPapersisors.git</string>
@@ -39,6 +47,22 @@
 			<string>2A6845AE21842C59ABFA9ACDAC791AE8BE6AAC94</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Homework1</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>95438028B10BBB846574013D29F154A00556A9D1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Nimble</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D0725CAC6FF2D66F2C83C2C48DC12106D42DAA64</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Quick</string>
 		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>

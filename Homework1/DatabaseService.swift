@@ -10,7 +10,7 @@ import Foundation
 import Squeal
 
 public class DatabaseService{
-
+    
     
     public func createUserTable(){
         let db = getDb()
@@ -22,7 +22,8 @@ public class DatabaseService{
                 "age INTEGER",
                 "wins INTEGER",
                 "looses INTEGER",
-                "ties INTEGER"
+                "ties INTEGER",
+                "UNIQUE(username)"
             ])
     }
     
@@ -32,18 +33,43 @@ public class DatabaseService{
         var error: NSError?
         if let rowId = db.insertInto("users", values:[
             
-                "username":user.username,
+            "username":user.username,
+            "sex":user.sex,
+            "age":user.age,
+            "wins":user.wins,
+            "looses":user.looses,
+            "ties":user.ties
+            
+            ], error:&error) {
+                // success
+        } else {
+            // failure
+            if(error?.code == 19){ // code 19 is a contraint violation, our only constrait is a unquie username, so this means DUPLICATE USER
+                // if they already exist, update them!
+                updateUser(user);
+            }
+        }
+    }
+    
+    public func updateUser(user: User){
+        var db = getDb();
+        var error: NSError?
+        if let updateCount = db.update("users",
+            set:[
                 "sex":user.sex,
                 "age":user.age,
                 "wins":user.wins,
                 "looses":user.looses,
                 "ties":user.ties
-            
-            ], error:&error) {
-            // success
+            ],
+            whereExpr: "username = ?",
+            parameters:[user.username],
+            error:&error) {
+                println("update count"+"\(updateCount)");
         } else {
-            // failure
-            println(error);
+            println(error)
+            println("error on update")
+            // handle error
         }
     }
     
@@ -54,5 +80,5 @@ public class DatabaseService{
         return db
     }
     
-
+    
 }
