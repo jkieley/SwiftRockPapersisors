@@ -125,8 +125,20 @@
                                     <action selector="OnClick_ScissorsButton:" destination="akD-0e-hPX" eventType="touchUpInside" id="P3W-N5-387"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOO-iw-II7">
+                                <rect key="frame" x="9" y="138" width="302" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50h-RU-mWe">
+                                <rect key="frame" x="42" y="307" width="236" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AOv-VB-q6H">
-                                <rect key="frame" x="137" y="256" width="30" height="30"/>
+                                <rect key="frame" x="144" y="255" width="30" height="30"/>
                                 <state key="normal" title="Play">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -134,19 +146,17 @@
                                     <action selector="OnClick_PlayButton:" destination="akD-0e-hPX" eventType="touchUpInside" id="xq2-UG-SXO"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOO-iw-II7">
-                                <rect key="frame" x="52" y="138" width="216" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="eZL-n6-pTr"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="Button_Paper" destination="Llg-Lb-8g9" id="4hV-QR-tvp"/>
                         <outlet property="Button_Play" destination="AOv-VB-q6H" id="bsa-8P-dpy"/>
+                        <outlet property="Button_Rock" destination="S9O-up-3MZ" id="tD6-45-tQb"/>
+                        <outlet property="Button_Scissors" destination="7DK-fs-ktD" id="Ffg-7V-dhh"/>
+                        <outlet property="Label_Results" destination="50h-RU-mWe" id="bdf-63-cVA"/>
                         <outlet property="Label_UserChoice" destination="pOO-iw-II7" id="Cfm-uY-p9q"/>
                     </connections>
                 </viewController>
