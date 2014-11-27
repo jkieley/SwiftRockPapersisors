@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D39643171A26948800FC8F3D /* Squeal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D57F69461A26169E0095EA43 /* Squeal.framework */; };
-		D39643181A26948800FC8F3D /* Squeal.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D57F69461A26169E0095EA43 /* Squeal.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D38CD3CF1A26A12400B6CB20 /* Squeal.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D3C967FD1A26A0090010F22A /* Squeal.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D38CD3D01A26A12400B6CB20 /* Squeal.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D3C968011A26A0090010F22A /* Squeal.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D39643181A26948800FC8F3D /* Squeal.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D57F69461A26169E0095EA43 /* Squeal.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D515D00C19CFFDB600BF7F1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515D00B19CFFDB600BF7F1A /* AppDelegate.swift */; };
 		D515D00E19CFFDB600BF7F1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515D00D19CFFDB600BF7F1A /* ViewController.swift */; };
 		D515D01119CFFDB600BF7F1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D515D00F19CFFDB600BF7F1A /* Main.storyboard */; };
@@ -17,17 +18,65 @@
 		D515D02219CFFDB600BF7F1A /* Homework1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515D02119CFFDB600BF7F1A /* Homework1Tests.swift */; };
 		D57F69371A253B1E0095EA43 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F69361A253B1E0095EA43 /* User.swift */; };
 		D57F69391A253BE20095EA43 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F69381A253BE20095EA43 /* DatabaseService.swift */; };
-		D57F69511A2616E00095EA43 /* Squeal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D57F69461A26169E0095EA43 /* Squeal.framework */; };
 		D5E62DF61A242CB200176D9F /* SecondaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E62DF51A242CB200176D9F /* SecondaryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D38CD3C21A26A10D00B6CB20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3C967DF1A26A0090010F22A /* Squeal.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = CDCBEB4B19C5F6F500862BFD;
+			remoteInfo = "Squeal-iOS";
+		};
 		D39643191A26948800FC8F3D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D57F693A1A26169D0095EA43 /* Squeal.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = CD7247F61996880300151E1E;
 			remoteInfo = "Squeal-OSX";
+		};
+		D3C967FC1A26A0090010F22A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3C967DF1A26A0090010F22A /* Squeal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CD7247F71996880300151E1E;
+			remoteInfo = "Squeal-OSX";
+		};
+		D3C967FE1A26A0090010F22A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3C967DF1A26A0090010F22A /* Squeal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CD7248021996880300151E1E;
+			remoteInfo = "Squeal-OSXTests";
+		};
+		D3C968001A26A0090010F22A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3C967DF1A26A0090010F22A /* Squeal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CDCBEB4C19C5F6F500862BFD;
+			remoteInfo = "Squeal-iOS";
+		};
+		D3C968021A26A0090010F22A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3C967DF1A26A0090010F22A /* Squeal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CDCBEB5619C5F6F500862BFD;
+			remoteInfo = "Squeal-iOSTests";
+		};
+		D3C968041A26A0090010F22A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3C967DF1A26A0090010F22A /* Squeal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CD3DE27919BCD44B00DED437;
+			remoteInfo = "SquealSpecHelpers-OSX";
+		};
+		D3C968061A26A0090010F22A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3C967DF1A26A0090010F22A /* Squeal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CDCBEB7019C5F77900862BFD;
+			remoteInfo = "SquealSpecHelpers-iOS";
 		};
 		D515D01C19CFFDB600BF7F1A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -87,6 +136,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				D38CD3CF1A26A12400B6CB20 /* Squeal.framework in Embed Frameworks */,
+				D38CD3D01A26A12400B6CB20 /* Squeal.framework in Embed Frameworks */,
 				D39643181A26948800FC8F3D /* Squeal.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -95,6 +146,45 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D3C967C31A26A0090010F22A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		D3C967C41A26A0090010F22A /* .gitmodules */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitmodules; sourceTree = "<group>"; };
+		D3C967C81A26A0090010F22A /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		D3C967CA1A26A0090010F22A /* module.map */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.map; sourceTree = "<group>"; };
+		D3C967CB1A26A0090010F22A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D3C967CD1A26A0090010F22A /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		D3C967CE1A26A0090010F22A /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		D3C967CF1A26A0090010F22A /* DatabasePool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabasePool.swift; sourceTree = "<group>"; };
+		D3C967D01A26A0090010F22A /* DeleteHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteHelpers.swift; sourceTree = "<group>"; };
+		D3C967D11A26A0090010F22A /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		D3C967D21A26A0090010F22A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3C967D31A26A0090010F22A /* InsertHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertHelpers.swift; sourceTree = "<group>"; };
+		D3C967D41A26A0090010F22A /* SchemaHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchemaHelpers.swift; sourceTree = "<group>"; };
+		D3C967D51A26A0090010F22A /* SelectHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectHelpers.swift; sourceTree = "<group>"; };
+		D3C967D61A26A0090010F22A /* Squeal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Squeal.h; sourceTree = "<group>"; };
+		D3C967D71A26A0090010F22A /* Statement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statement.swift; sourceTree = "<group>"; };
+		D3C967D81A26A0090010F22A /* TransactionHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHelpers.swift; sourceTree = "<group>"; };
+		D3C967D91A26A0090010F22A /* UpdateHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateHelpers.swift; sourceTree = "<group>"; };
+		D3C967DB1A26A0090010F22A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3C967DC1A26A0090010F22A /* Squeal-iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Squeal-iOS.h"; sourceTree = "<group>"; };
+		D3C967DE1A26A0090010F22A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3C967DF1A26A0090010F22A /* Squeal.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Squeal.xcodeproj; sourceTree = "<group>"; };
+		D3C967E31A26A0090010F22A /* DatabaseSpecHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseSpecHelpers.swift; sourceTree = "<group>"; };
+		D3C967E41A26A0090010F22A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3C967E51A26A0090010F22A /* SquealSpecHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SquealSpecHelpers.h; sourceTree = "<group>"; };
+		D3C967E61A26A0090010F22A /* StatementSpecHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementSpecHelpers.swift; sourceTree = "<group>"; };
+		D3C967E81A26A0090010F22A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3C967E91A26A0090010F22A /* SquealSpecHelpers-iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SquealSpecHelpers-iOS.h"; sourceTree = "<group>"; };
+		D3C967EB1A26A0090010F22A /* BindableSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableSpec.swift; sourceTree = "<group>"; };
+		D3C967EC1A26A0090010F22A /* DatabasePoolSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabasePoolSpec.swift; sourceTree = "<group>"; };
+		D3C967ED1A26A0090010F22A /* DatabaseSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseSpec.swift; sourceTree = "<group>"; };
+		D3C967EE1A26A0090010F22A /* DeleteHelpersSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteHelpersSpec.swift; sourceTree = "<group>"; };
+		D3C967EF1A26A0090010F22A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3C967F01A26A0090010F22A /* InsertHelpersSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertHelpersSpec.swift; sourceTree = "<group>"; };
+		D3C967F11A26A0090010F22A /* SchemaHelpersSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchemaHelpersSpec.swift; sourceTree = "<group>"; };
+		D3C967F21A26A0090010F22A /* SelectHelpersSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectHelpersSpec.swift; sourceTree = "<group>"; };
+		D3C967F31A26A0090010F22A /* StatementSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementSpec.swift; sourceTree = "<group>"; };
+		D3C967F41A26A0090010F22A /* TransactionHelpersSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHelpersSpec.swift; sourceTree = "<group>"; };
+		D3C967F51A26A0090010F22A /* UpdateHelpersSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateHelpersSpec.swift; sourceTree = "<group>"; };
 		D515D00619CFFDB600BF7F1A /* Homework1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homework1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D515D00A19CFFDB600BF7F1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D515D00B19CFFDB600BF7F1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -116,8 +206,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D57F69511A2616E00095EA43 /* Squeal.framework in Frameworks */,
-				D39643171A26948800FC8F3D /* Squeal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,9 +219,150 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D3C967C21A26A0090010F22A /* Squeal */ = {
+			isa = PBXGroup;
+			children = (
+				D3C967C31A26A0090010F22A /* .gitignore */,
+				D3C967C41A26A0090010F22A /* .gitmodules */,
+				D3C967C51A26A0090010F22A /* Externals */,
+				D3C967C81A26A0090010F22A /* LICENSE.txt */,
+				D3C967C91A26A0090010F22A /* modules */,
+				D3C967CB1A26A0090010F22A /* README.md */,
+				D3C967CC1A26A0090010F22A /* Squeal */,
+				D3C967DA1A26A0090010F22A /* Squeal-iOS */,
+				D3C967DD1A26A0090010F22A /* Squeal-iOSTests */,
+				D3C967DF1A26A0090010F22A /* Squeal.xcodeproj */,
+				D3C967E21A26A0090010F22A /* SquealSpecHelpers */,
+				D3C967E71A26A0090010F22A /* SquealSpecHelpers-iOS */,
+				D3C967EA1A26A0090010F22A /* SquealTests */,
+			);
+			name = Squeal;
+			path = Externals/Squeal;
+			sourceTree = "<group>";
+		};
+		D3C967C51A26A0090010F22A /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				D3C967C61A26A0090010F22A /* Nimble */,
+				D3C967C71A26A0090010F22A /* Quick */,
+			);
+			path = Externals;
+			sourceTree = "<group>";
+		};
+		D3C967C61A26A0090010F22A /* Nimble */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Nimble;
+			sourceTree = "<group>";
+		};
+		D3C967C71A26A0090010F22A /* Quick */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Quick;
+			sourceTree = "<group>";
+		};
+		D3C967C91A26A0090010F22A /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				D3C967CA1A26A0090010F22A /* module.map */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		D3C967CC1A26A0090010F22A /* Squeal */ = {
+			isa = PBXGroup;
+			children = (
+				D3C967CD1A26A0090010F22A /* Bindable.swift */,
+				D3C967CE1A26A0090010F22A /* Database.swift */,
+				D3C967CF1A26A0090010F22A /* DatabasePool.swift */,
+				D3C967D01A26A0090010F22A /* DeleteHelpers.swift */,
+				D3C967D11A26A0090010F22A /* Errors.swift */,
+				D3C967D21A26A0090010F22A /* Info.plist */,
+				D3C967D31A26A0090010F22A /* InsertHelpers.swift */,
+				D3C967D41A26A0090010F22A /* SchemaHelpers.swift */,
+				D3C967D51A26A0090010F22A /* SelectHelpers.swift */,
+				D3C967D61A26A0090010F22A /* Squeal.h */,
+				D3C967D71A26A0090010F22A /* Statement.swift */,
+				D3C967D81A26A0090010F22A /* TransactionHelpers.swift */,
+				D3C967D91A26A0090010F22A /* UpdateHelpers.swift */,
+			);
+			path = Squeal;
+			sourceTree = "<group>";
+		};
+		D3C967DA1A26A0090010F22A /* Squeal-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D3C967DB1A26A0090010F22A /* Info.plist */,
+				D3C967DC1A26A0090010F22A /* Squeal-iOS.h */,
+			);
+			path = "Squeal-iOS";
+			sourceTree = "<group>";
+		};
+		D3C967DD1A26A0090010F22A /* Squeal-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				D3C967DE1A26A0090010F22A /* Info.plist */,
+			);
+			path = "Squeal-iOSTests";
+			sourceTree = "<group>";
+		};
+		D3C967E01A26A0090010F22A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3C967FD1A26A0090010F22A /* Squeal.framework */,
+				D3C967FF1A26A0090010F22A /* Squeal-OSXTests.xctest */,
+				D3C968011A26A0090010F22A /* Squeal.framework */,
+				D3C968031A26A0090010F22A /* Squeal-iOSTests.xctest */,
+				D3C968051A26A0090010F22A /* SquealSpecHelpers.framework */,
+				D3C968071A26A0090010F22A /* SquealSpecHelpers.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3C967E21A26A0090010F22A /* SquealSpecHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				D3C967E31A26A0090010F22A /* DatabaseSpecHelpers.swift */,
+				D3C967E41A26A0090010F22A /* Info.plist */,
+				D3C967E51A26A0090010F22A /* SquealSpecHelpers.h */,
+				D3C967E61A26A0090010F22A /* StatementSpecHelpers.swift */,
+			);
+			path = SquealSpecHelpers;
+			sourceTree = "<group>";
+		};
+		D3C967E71A26A0090010F22A /* SquealSpecHelpers-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D3C967E81A26A0090010F22A /* Info.plist */,
+				D3C967E91A26A0090010F22A /* SquealSpecHelpers-iOS.h */,
+			);
+			path = "SquealSpecHelpers-iOS";
+			sourceTree = "<group>";
+		};
+		D3C967EA1A26A0090010F22A /* SquealTests */ = {
+			isa = PBXGroup;
+			children = (
+				D3C967EB1A26A0090010F22A /* BindableSpec.swift */,
+				D3C967EC1A26A0090010F22A /* DatabasePoolSpec.swift */,
+				D3C967ED1A26A0090010F22A /* DatabaseSpec.swift */,
+				D3C967EE1A26A0090010F22A /* DeleteHelpersSpec.swift */,
+				D3C967EF1A26A0090010F22A /* Info.plist */,
+				D3C967F01A26A0090010F22A /* InsertHelpersSpec.swift */,
+				D3C967F11A26A0090010F22A /* SchemaHelpersSpec.swift */,
+				D3C967F21A26A0090010F22A /* SelectHelpersSpec.swift */,
+				D3C967F31A26A0090010F22A /* StatementSpec.swift */,
+				D3C967F41A26A0090010F22A /* TransactionHelpersSpec.swift */,
+				D3C967F51A26A0090010F22A /* UpdateHelpersSpec.swift */,
+			);
+			path = SquealTests;
+			sourceTree = "<group>";
+		};
 		D515CFFD19CFFDB600BF7F1A = {
 			isa = PBXGroup;
 			children = (
+				D3C967C21A26A0090010F22A /* Squeal */,
 				D515D00819CFFDB600BF7F1A /* Homework1 */,
 				D515D01E19CFFDB600BF7F1A /* Homework1Tests */,
 				D515D00719CFFDB600BF7F1A /* Products */,
@@ -219,6 +448,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				D38CD3C31A26A10D00B6CB20 /* PBXTargetDependency */,
 				D396431A1A26948800FC8F3D /* PBXTargetDependency */,
 			);
 			name = Homework1;
@@ -277,6 +507,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = D3C967E01A26A0090010F22A /* Products */;
+					ProjectRef = D3C967DF1A26A0090010F22A /* Squeal.xcodeproj */;
+				},
+				{
 					ProductGroup = D57F693B1A26169D0095EA43 /* Products */;
 					ProjectRef = D57F693A1A26169D0095EA43 /* Squeal.xcodeproj */;
 				},
@@ -290,6 +524,48 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		D3C967FD1A26A0090010F22A /* Squeal.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Squeal.framework;
+			remoteRef = D3C967FC1A26A0090010F22A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D3C967FF1A26A0090010F22A /* Squeal-OSXTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Squeal-OSXTests.xctest";
+			remoteRef = D3C967FE1A26A0090010F22A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D3C968011A26A0090010F22A /* Squeal.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Squeal.framework;
+			remoteRef = D3C968001A26A0090010F22A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D3C968031A26A0090010F22A /* Squeal-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Squeal-iOSTests.xctest";
+			remoteRef = D3C968021A26A0090010F22A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D3C968051A26A0090010F22A /* SquealSpecHelpers.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SquealSpecHelpers.framework;
+			remoteRef = D3C968041A26A0090010F22A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D3C968071A26A0090010F22A /* SquealSpecHelpers.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SquealSpecHelpers.framework;
+			remoteRef = D3C968061A26A0090010F22A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		D57F69461A26169E0095EA43 /* Squeal.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -378,6 +654,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D38CD3C31A26A10D00B6CB20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Squeal-iOS";
+			targetProxy = D38CD3C21A26A10D00B6CB20 /* PBXContainerItemProxy */;
+		};
 		D396431A1A26948800FC8F3D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Squeal-OSX";
