@@ -17,7 +17,8 @@
 		D515D02219CFFDB600BF7F1A /* Homework1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515D02119CFFDB600BF7F1A /* Homework1Tests.swift */; };
 		D57F69371A253B1E0095EA43 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F69361A253B1E0095EA43 /* User.swift */; };
 		D57F69391A253BE20095EA43 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57F69381A253BE20095EA43 /* DatabaseService.swift */; };
-		D5E62DF61A242CB200176D9F /* SecondaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5E62DF51A242CB200176D9F /* SecondaryViewController.swift */; };
+		D5C48D231A26DC030010A1C4 /* DeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C48D211A26DC030010A1C4 /* DeviceViewController.swift */; };
+		D5C48D241A26DC030010A1C4 /* SecondaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C48D221A26DC030010A1C4 /* SecondaryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -189,7 +190,8 @@
 		D57F69361A253B1E0095EA43 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D57F69381A253BE20095EA43 /* DatabaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
 		D57F693A1A26169D0095EA43 /* Squeal.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Squeal.xcodeproj; path = Externals/Squeal/Squeal.xcodeproj; sourceTree = SOURCE_ROOT; };
-		D5E62DF51A242CB200176D9F /* SecondaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondaryViewController.swift; path = ../SecondaryViewController.swift; sourceTree = "<group>"; };
+		D5C48D211A26DC030010A1C4 /* DeviceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceViewController.swift; sourceTree = "<group>"; };
+		D5C48D221A26DC030010A1C4 /* SecondaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondaryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -372,9 +374,10 @@
 		D515D00819CFFDB600BF7F1A /* Homework1 */ = {
 			isa = PBXGroup;
 			children = (
+				D5C48D211A26DC030010A1C4 /* DeviceViewController.swift */,
+				D5C48D221A26DC030010A1C4 /* SecondaryViewController.swift */,
 				D57F69361A253B1E0095EA43 /* User.swift */,
 				D57F69381A253BE20095EA43 /* DatabaseService.swift */,
-				D5E62DF51A242CB200176D9F /* SecondaryViewController.swift */,
 				D515D00B19CFFDB600BF7F1A /* AppDelegate.swift */,
 				D515D00D19CFFDB600BF7F1A /* ViewController.swift */,
 				D515D00F19CFFDB600BF7F1A /* Main.storyboard */,
@@ -627,9 +630,10 @@
 			files = (
 				D57F69371A253B1E0095EA43 /* User.swift in Sources */,
 				D57F69391A253BE20095EA43 /* DatabaseService.swift in Sources */,
+				D5C48D231A26DC030010A1C4 /* DeviceViewController.swift in Sources */,
 				D515D00E19CFFDB600BF7F1A /* ViewController.swift in Sources */,
 				D515D00C19CFFDB600BF7F1A /* AppDelegate.swift in Sources */,
-				D5E62DF61A242CB200176D9F /* SecondaryViewController.swift in Sources */,
+				D5C48D241A26DC030010A1C4 /* SecondaryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
