@@ -103,7 +103,7 @@ class SecondaryViewController: UIViewController {
         userTie = false
         GameLogic_GenerateComputerChoice()
         GameLogic_ComputeResults()
-//        GameLogic_DisplayResults()
+        GameLogic_DisplayResults()
     }
 
     func UI_SetButtonColors(){
@@ -138,19 +138,19 @@ class SecondaryViewController: UIViewController {
         }
     }
     
-//    func GameLogic_DisplayResults(){
-//        if numberOfPlayers == 1{
-//            if userTie{
-//                Label_Result.text = "Tie Game"
-//            }
-//            else if userWon{
-//                Label_Result.text = "You Win!"
-//            }
-//            else{
-//                Label_Result.text = "You Lose :("
-//            }
-//        }
-//    }
+    func GameLogic_DisplayResults(){
+        if numberOfPlayers == 1{
+            if userTie{
+                Label_Results.text = "Tie Game"
+            }
+            else if userWon{
+                Label_Results.text = "You Win!"
+            }
+            else{
+                Label_Results.text = "You Lose :("
+            }
+        }
+    }
     
     func GameLogic_GenerateComputerChoice(){
         opponentChoice = Int(arc4random_uniform(3)) + 1

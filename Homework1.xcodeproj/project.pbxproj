@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D38CD3CF1A26A12400B6CB20 /* Squeal.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D3C967FD1A26A0090010F22A /* Squeal.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D38CD3D01A26A12400B6CB20 /* Squeal.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D3C968011A26A0090010F22A /* Squeal.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D39643181A26948800FC8F3D /* Squeal.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D57F69461A26169E0095EA43 /* Squeal.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D38CD3D31A26B4B800B6CB20 /* Squeal-iOS.h in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D3C967DC1A26A0090010F22A /* Squeal-iOS.h */; };
 		D515D00C19CFFDB600BF7F1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515D00B19CFFDB600BF7F1A /* AppDelegate.swift */; };
 		D515D00E19CFFDB600BF7F1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515D00D19CFFDB600BF7F1A /* ViewController.swift */; };
 		D515D01119CFFDB600BF7F1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D515D00F19CFFDB600BF7F1A /* Main.storyboard */; };
@@ -22,19 +21,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D38CD3C21A26A10D00B6CB20 /* PBXContainerItemProxy */ = {
+		D38CD3D11A26B48C00B6CB20 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D3C967DF1A26A0090010F22A /* Squeal.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = CDCBEB4B19C5F6F500862BFD;
 			remoteInfo = "Squeal-iOS";
-		};
-		D39643191A26948800FC8F3D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D57F693A1A26169D0095EA43 /* Squeal.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = CD7247F61996880300151E1E;
-			remoteInfo = "Squeal-OSX";
 		};
 		D3C967FC1A26A0090010F22A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -136,9 +128,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D38CD3CF1A26A12400B6CB20 /* Squeal.framework in Embed Frameworks */,
+				D38CD3D31A26B4B800B6CB20 /* Squeal-iOS.h in Embed Frameworks */,
 				D38CD3D01A26A12400B6CB20 /* Squeal.framework in Embed Frameworks */,
-				D39643181A26948800FC8F3D /* Squeal.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,8 +439,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				D38CD3C31A26A10D00B6CB20 /* PBXTargetDependency */,
-				D396431A1A26948800FC8F3D /* PBXTargetDependency */,
+				D38CD3D21A26B48C00B6CB20 /* PBXTargetDependency */,
 			);
 			name = Homework1;
 			productName = Homework1;
@@ -654,15 +644,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D38CD3C31A26A10D00B6CB20 /* PBXTargetDependency */ = {
+		D38CD3D21A26B48C00B6CB20 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Squeal-iOS";
-			targetProxy = D38CD3C21A26A10D00B6CB20 /* PBXContainerItemProxy */;
-		};
-		D396431A1A26948800FC8F3D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Squeal-OSX";
-			targetProxy = D39643191A26948800FC8F3D /* PBXContainerItemProxy */;
+			targetProxy = D38CD3D11A26B48C00B6CB20 /* PBXContainerItemProxy */;
 		};
 		D515D01D19CFFDB600BF7F1A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
